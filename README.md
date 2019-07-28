@@ -1,16 +1,52 @@
 # e005_flutter_hero_animation_on_text_e004base
 
-A new Flutter project.
+## Step 1
 
-## Getting Started
+    Hero(
+        tag: taskOpj.guid,
+        child: Text(taskOpj.note),
+    ),
 
-This project is a starting point for a Flutter application.
+## Step 2
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    Hero(
+        tag: widget.taskOpj.guid,
+        child: Material(
+        child: TextField(
+        decoration: InputDecoration(
+            border: InputBorder.none,
+            ),
+        autofocus: true,
+        keyboardType: TextInputType.multiline,
+        maxLines: null,
+        controller: _noteController),
+            ),
+    ),
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Step 3
+
+    onPressed: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+        builder: (context) {
+            return TaskEditPageWidget(
+            taskOpj: taskOpj,
+            notifyParent: notifyParent,
+            );
+        },
+        ),
+    ),
+
+## Ref
+
+- [Hero (Flutter Widget of the Week) - YouTube](https://www.youtube.com/watch?v=Be9UH1kXFDw)
+
+- [Hero Animations - Flutter](https://flutter.dev/docs/development/ui/animations/hero-animations)
+
+- [Search · hero](https://github.com/flutter/flutter/search?p=2&q=hero&unscoped_q=hero)
+
+## issues
+
+ - [No Material widget found error but Scaffold present · Issue #28326 · flutter/flutter](https://github.com/flutter/flutter/issues/28326)
+

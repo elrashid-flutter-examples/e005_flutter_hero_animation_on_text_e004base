@@ -1,5 +1,7 @@
 # e005_flutter_hero_animation_on_text_e004base
 
+![app screen record](docs/screen_record.gif)
+
 ## Step 1
 
     Hero(

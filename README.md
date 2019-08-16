@@ -1,6 +1,20 @@
 # e005_flutter_hero_animation_on_text_e004base
 
+## Based On e004
+
+- [elrashid-flutter-examples/e004_flutter_listview_crud_app_using_nonsecure_rest_api](https://github.com/elrashid-flutter-examples/e004_flutter_listview_crud_app_using_nonsecure_rest_api)
+
+## Screen Record
+
 ![app screen record](docs/screen_record.gif)
+
+## What
+
+- Hero animation on a text filed flutter Task app (e004)
+
+- must run with :
+
+  - [elrashid-flutter-examples/e002-aspcore-rest-api-server-for-flutter](https://github.com/elrashid-flutter-examples/e002-aspcore-rest-api-server-for-flutter)
 
 ## Step 1
 
